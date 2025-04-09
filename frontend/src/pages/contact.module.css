@@ -1,0 +1,215 @@
+
+
+
+.contactContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #8B0000, #FFD700);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  margin-top: 10px;
+  transform: translate(-100px);
+  opacity: 0;
+  animation: slideIn 1s ease-in-out forwards;
+  
+}
+.contactContainer:nth-child(1) {
+  animation-delay: 0.2s;
+}
+.contactContainer:nth-child(2) {
+  animation-delay: 0.4s;
+}
+.contactContainer:nth-child(3) {
+  animation-delay: 0.6s;
+}
+.contactContainer:nth-child(4) {
+  animation-delay: 0.8s;
+}
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 
+
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Content */
+.contactContent {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(255, 245, 230, 0.95);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: transform 0.3s ease-in-out;
+}
+
+.contactContent:hover {
+  transform: scale(1.02);
+}
+
+/* Contact Info Section */
+.contactInfo {
+  flex: 1;
+  padding: 40px;
+  background: linear-gradient(135deg, #B22222, #DAA520);
+  color: white;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contactInfo h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.contactInfo p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.infoItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: white;
+}
+
+/* Contact Form */
+.contactForm {
+  flex: 1;
+  padding: 40px;
+  text-align: left;
+  background: white;
+}
+
+.contactForm h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #8B0000;
+}
+
+/* Input Fields */
+.inputGroup {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inputGroup input,
+.inputGroup textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #B22222;
+  border-radius: 5px;
+  font-size: 1rem;
+  background: transparent;
+  color: #333;
+  transition: 0.3s;
+  text-align: left;
+}
+
+.inputGroup textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* Input Animations */
+.inputGroup input:focus,
+.inputGroup textarea:focus {
+  border-color: #DAA520;
+  outline: none;
+  box-shadow: 0px 5px 10px rgba(218, 165, 32, 0.4);
+}
+
+/* Centered Floating Labels */
+.inputGroup label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #666;
+  font-size: 1rem;
+  transition: 0.3s;
+  pointer-events: none;
+  text-align: left;
+}
+
+.inputGroup input:focus + label,
+.inputGroup textarea:focus + label,
+.inputGroup input:not(:placeholder-shown) + label,
+.inputGroup textarea:not(:placeholder-shown) + label {
+  top: 15px;
+  left: 7.5%;
+  transform: translateX(-50%);
+  font-size: 0.9rem;
+  color: #DAA520;
+}
+
+/* Submit Button */
+.submitBtn {
+  display: inline-block;
+  width: 100%;
+  background: linear-gradient(135deg, #DAA520, #8B0000);
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.submitBtn:hover {
+  background: linear-gradient(135deg, #8B0000, #DAA520);
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(218, 165, 32, 0.5);
+}
+
+/* Status Message */
+.statusMessage {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: green;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contactContent {
+    flex-direction: column;
+  }
+  .contactInfo,
+  .contactForm {
+    flex: none;
+    width: 100%;
+  }
+}

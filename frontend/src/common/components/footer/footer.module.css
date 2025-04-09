@@ -1,0 +1,149 @@
+/* Footer Styles */
+.footer {
+  background: #f50723,#a03008;
+  color: white;
+  padding: 30px 10px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Footer Container */
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Sections */
+.footerAbout, .footerLinks, .socialSection, .newsletter {
+  padding: 15px;
+}
+
+.footerAbout h3,
+.footerLinks h3,
+.socialSection h3,
+.newsletter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #070318;
+}
+
+/* Links */
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLink {
+  text-decoration: none;
+  color: white;
+  margin: 5px 0;
+  font-size: 1rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footerLink:hover {
+  color: #f1c40f;
+}
+
+/* Social Icons */
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socialIcon {
+  color: white;
+  font-size: 1.5rem;
+  transition: transform 0.3s ease-in-out, color 0.3s;
+}
+
+.socialIcon:hover {
+  color: #f1c40f;
+  transform: scale(1.2);
+}
+
+/* Newsletter Section */
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.emailInput {
+  padding: 10px;
+  width: 70%;
+  border: none;
+  border-radius: 5px;
+}
+
+.subscribeButton {
+  background: #f1c40f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.subscribeButton:hover {
+  background: #f39c12;
+  transform: scale(1.05);
+}
+
+/* Footer Bottom */
+.footerBottom {
+  text-align: center;
+  padding: 15px;
+  background: #f50723,#a03008;
+  margin-top: 30px;
+}
+/* Ensure the page takes full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Make the main content area grow */
+#root {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Footer Styles */
+.footer {
+  background: linear-gradient(90deg,  #e09f3e),#8E0D3C; 
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: auto;  
+}
+
+/* Footer Container */
+.footerContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Footer Bottom */
+.footerBottom {
+  text-align: center;
+  padding: 15px;
+  background: linear-gradient(90deg, #e49929,#df739a); 
+  margin-top: 30px;
+}

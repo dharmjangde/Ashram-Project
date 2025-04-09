@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f0860e;
+}
+
+.homeContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: center;
+  margin-top: 0px; 
+  padding-top: 0px;
+}
+
+.heroSection {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url('./t6.jpg') no-repeat center center/cover;
+}
+
+/* Transparent Overlay */
+
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: bold;
+  animation: fadeInUp 1.5s ease-in-out;
+}
+
+/* About Section */
+.aboutSection {
+  padding: 80px 20px;
+  text-align: center;
+  background: rgba(238, 69, 148, 0.2);
+  width: 100%;
+}
+
+/* Programs Section */
+.programsSection {
+  padding: 20px;
+  text-align: center;
+  background: rgba(216, 164, 93, 0.8); /* Gold with slight transparency */
+  width: 100%;
+}
+
+.programGrid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Cards with Traditional Look */
+.card {
+  width: 280px;
+  padding: 20px;
+  background: linear-gradient(90deg, #8b0000, #ff4500); /* Rich red tones */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Testimonials Section */
+.testimonialsSection {
+  padding: 60px 20px;
+  background: rgba(244, 179, 105, 0.9); /* Dark wood-brown with slight transparency */
+  color: #ffd700;
+  text-align: center;
+  width: 100%;
+}
+
+.testimonial {
+  background: rgba(139, 0, 0, 0.8); /* Deep red */
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+  max-width: 600px;
+  color: #fff;
+}
+
+/* Partners Section */
+.partnersSection {
+  padding: 50px;
+  text-align: center;
+  background: rgba(255, 243, 205, 0.9);
+  width: 100%;
+}
+
+.partnersLogos {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.partnerLogo {
+  width: 150px;
+  height: auto;
+}
+
+/* CTA Section */
+.ctaSection {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(90deg, #8b7f5059, #cf6d3d);
+  color: white;
+  width: 100%;
+}
+
+.button {
+  background: #ffd700;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition:  0.3s;
+}
+
+.button:hover {
+  background: #f39c12;
+  transform: scale(1.1);
+}
+
+/* Background Image with Transparency */
+.backgroundImage {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.9; /* Adjust transparency */
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .programGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+}
+/* Home Container */
+.homeContainer {
+  position: relative;
+  width: 100%;
+  height: auto; /* Allow it to adjust to content */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Align content at the top */
+  align-items: center;
+  margin-top: 60px; /* Adjusted to avoid navbar overlap */
+  padding-top: 0px;
+  background: linear-gradient(90deg, #7a1c1c, #e09f3e); /* Extra spacing below navbar */
+}
+
+/* Fix Navbar Overlapping */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 60px; /* Adjust this if your navbar has a different height */
+  background: rgba(0, 0, 0, 0.9);
+  z-index: 1000; /* Ensure navbar stays on top */
+}
+
+
+
+
+/* Content Wrapper (Fixed Alignment) */
+.contentWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  z-index: 1;
+  margin-top: 20px; /* Prevents content from touching the navbar */
+}
+
+/* Section Box */
+.section {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  padding: 20px;
+  background: rgb(250, 218, 194);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+/* Section Title */
+.sectionTitle {
+  font-size: 1.5rem;
+  color: #161515;
+  margin-bottom: 10px;
+  animation: blink 1s infinite alternate ease-in-out;
+}
+
+@keyframes blink {
+  0% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.5; transform: scale(1.1); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+/* Buttons */
+.moreButton {
+  background: #d32f2f;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-top: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.moreButton:hover {
+  transform: scale(1.05);
+  background: #b71c1c;
+}
+
+/* ✅ Our Impact Section Fix */
+.impactSection {
+  background: url('Temple.avif');
+  padding: 40px 20px;
+  border-radius: 5px;
+  color:black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-top: 10px; /* Space below navbar */
+  overflow: hidden;
+  width: 100%;
+}
+
+/* Impact Grid */
+.impactGrid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  z-index: 2;
+}
+
+/* Impact Cards */
+.impactCard {
+  background: rgba(255,255,255,0.2);
+  padding: 20px;
+  margin: 10px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+  position:relative;
+  z-index:2;
+  display:grid;
+  gap:10px;
+  transform:translateX(-100px);
+  opacity:0;
+  animation: slideIn 1s ease-in-out forwards;
+  font-size: xx-large;
+
+}
+.impactCard:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.impactCard:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.impactCard:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.impactCard:nth-child(4) {
+  animation-delay: 0.8s;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.impactSection::before{
+  content:"";
+  position: absolute;
+  top:0;
+  left: 0;
+  width:100%;
+  height: 100%;
+}
+.impactCard h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.counter {
+  font-size: 24px;
+  font-weight: bold;
+  color: #f3fef7;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .contentWrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .impactGrid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .impactCard {
+    width: 80%;
+  }
+}
