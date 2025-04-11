@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 
 import Button from "../common/components/buttons/Button";
 import Card from "../common/components/card";
-import CardContent from "../common/components/cardContent";
 import Navbar from "../common/components/header/Navbar";
 import Footer from "../common/components/footer/footer";
 import styles from "./home.module.css"; 

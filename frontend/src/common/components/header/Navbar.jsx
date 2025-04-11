@@ -39,7 +39,7 @@ const Navbar = () => {
       <ul className={`${styles.navLinks} ${isOpen ? styles.showMenu : ""}`}>
         <li><Link to="/" className={`${styles.link} ${styles.hoverEffect}`}>Home</Link></li>
         <li><Link to="/about" className={`${styles.link} ${styles.hoverEffect}`}>About</Link></li>
-        <li><Link to="/projects" className={`${styles.link} ${styles.hoverEffect}`}>News</Link></li>
+        <li><Link to="/news" className={`${styles.link} ${styles.hoverEffect}`}>News</Link></li>
         <li><Link to="/events" className={`${styles.link} ${styles.hoverEffect}`}>Events</Link></li>
         <li><Link to="/volunteer" className={`${styles.link} ${styles.hoverEffect}`}>Volunteer</Link></li>
         <li><Link to="/contact" className={`${styles.link} ${styles.hoverEffect}`}>Contact</Link></li>
