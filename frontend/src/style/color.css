@@ -1,0 +1,156 @@
+:root{
+    --primary-color:#e09f3e;
+    --primary-color-white:#edede7;
+    --primary-color-dark:#fe6769;
+
+    --background-color-yellow: #e09f3e;
+    --background-color-red:#7a1c1c;
+    --background-color-darkmaroon: #4c0b0b;
+    --background-color-deep-red: #c0392b;
+    --background-color-orange: #ff5733;
+    --background-color-rich-maroom:#5a1a1a;
+    --background-color-pumpkin-orange:#f0860e;
+    --background-color-hotpink:rgba(238, 69, 148, 0.2);
+    --background-color-gold:rgba(216, 164, 93, 0.8);
+    --background-color-dark-brown:(244,179,105,0.9);
+    --background-color-richred: rgba(#8b0000, #ff4500);
+    --background-color-DeepRed:rgba(139, 0, 0, 0.8);
+    --background-color-vibrant-orange:#ff9946;
+    --background-color-cream:#e3e0cc57;
+    --background-color-transparent-white:rgba(255, 255, 255, 0.3);
+    --backgrouund-color-Soft-Beige:#e9d9d9;
+    --background-color-soft-pink:#f2f5f7;
+    --backround-color-piching-orange:#f8a965;
+    --background-color-bgYellow:#ffeaa7;
+    --background-color-bgPurple:#dfe6fd;
+    --background-color-bgGreen:#d3f9d8;
+    --background-color-bgTeal:#d0f0f5;
+    --background-color-bgPeach:#ffe0cc;
+    --background-color-bgOrange:#fff0cc;
+    --background-color-light-gray:#f8f9fa;
+
+
+
+    --logo-color-gold: #ffd700;
+    
+    --font-color-warm-yellow-orange: #ffb300;
+    --font-color-vibrant-orange: #ff4500;
+    --font-color-carrot-orange:#e67e22;
+
+    --font-color-white:#fbf7f7;
+    --font-color-white-one:#ffffff;
+    --font-color-dark:#333333;
+    --font-color-dark-gray:#333;
+    --font-color-light-blue:#f2f6fb;
+    --font-color-charcol-gray: #444;
+    --font-color-light-gray:#555;
+    --font-color-moodnight-blue:#2c3e50;
+    --font-color-bright-blue:#007bff;
+    
+
+
+    --hover-color-white: white;
+    --hover-color-tomato:#ff6347;
+    --shadow-color-one:rgba(192, 57, 43, 0.7);
+    --shadow-color-two:rgba(192, 57, 43, 0.1);
+    --shadow-color:rgba(0, 0, 0, 0.1);
+    --shadow-color-one:rgba(0, 0, 0, 0.2);
+    --shadow-color-two:rgba(0, 0, 0, 0.3);
+    --shadow-color-three:rgba(0, 0, 0, 0.4);
+    --shadow-color-four:rgba(0, 0, 0, 0.5); 
+    --shadow-color-five:rgba(0, 0, 0, 0.6);        
+
+
+
+
+
+
+
+    /*header */
+    --header-bg-one:var(--background-color-red);
+    --header-bg-two:var(--background-color-yellow);
+    --header-scrolled-bg-color: var(--background-color-darkmaroon);
+    --header-logo-color: var(--logo-color-gold);
+    --header-logo-hover-color: var(--hover-color-white);
+    --header-link-font-color: var(--font-color-warm-yellow-orange);
+    --header-link-after-bg-color: var(--background-color-deep-red);
+    --header-link-hover-font-color: var(--font-color-vibrant-orange);
+    --header-donate-button-bg-color-one: var(--background-color-deep-red);
+    --header-donate-button-bg-color-two: var(--background-color-orange);
+    --header-button-donateButton-hover-color-one:var(--background-color-orange);
+    --header-button-donateButton-hover-color-two:var(--background-color-deep-red);
+    --header-button-donateButton-color:var(--hover-color-white);
+    --header-button-donationButton-hover-one:var(--background-color-orange);
+    --header-button-donationButton-hover-two:var(--background-color-deep-red);
+    --header-button-donationButton-glowEffect-one:var(--shadow-color-one);
+    --header-button-donationButton-glowEffect-one:var(--shadow-color-two);
+    --header-button-menuButton-color:var(--hover-color-white);
+    --header-navlinks-background-color:var(--background-color-rich-maroom);
+    --header-navlinks-boxshadow-color:var(--shadow-color);
+    --header-navlinks-link-color:var(--hover-color-white);
+    --header-navlinks-hoverEffect-color:var(--hover-color-white);
+
+
+
+    /* homepage */
+
+--homepage-background-color:var(--background-color-pumpkin-orange);
+--homepag-sectionTitleP:var(--font-color-white);
+    /*About Section*/   
+
+--homepage-aboutSection-bg-color:var(--background-color-hotpink);
+/* Programs Section */
+--homepage-programSection-bg-color:var(--background-color-gold);
+--homepage-programSection-card-bg-color:var(--background-color-richred);
+--homepage-programSection-card-box-shadow-color:var(--shadow-color);
+--homepage-programSection-card-font-color:var(--font-color-white);
+--homepage-programsection-card-hover-shadow:var(--shadow-color);
+--homepage-programsection-card-hover-h-p:var(--hover-color-tomato);
+--homepage-programsection-card-hover:var(--shadow-color-two);
+
+/* Testimonials Section */
+--homepage-testimonialsSection-bg-color:var(--background-color-dark-brown);
+--homepage-testimonialsSection-font-color:var(--logo-color-gold);
+--homepage-testimonial-bg-color:var(--background-color-DeepRed);
+--homepage-testimonial-font-color:var(--font-color-white);
+--homepage-testimonial-body-color:var(--font-color-vibrant-orange);
+--homepage-testimonial-card-box-shadow-color:var(--shadow-color-one);
+--homepage-testimonial-card-bg-color:var(--background-color-cream);
+--homepage-testimonial-card-hover-bg-color:var(--background-color-transparent-white);
+--homepage-testimonial-card-hover-shadow:var(--shadow-color-two);
+--homepage-testimonial-card-content-color:var(--font-color-white-one);
+--homepage-testimonial-card-font-color-p:var(--font-color-dark);
+--homepage-testimonial-card-font-color-h6:var(--font-color-white);
+--homepage-testimonial-container-h1-color:var(--font-color-white);
+--homepage-testimonial-container-button-bg-color:var(--font-color-white);
+--homepage-testimonial-container-button-bg-color-one:var(--primary-color-dark);
+--homepage-testimonial-container-button-font-color:var(--font-color-white);
+
+/* Goal Section */
+--goal-section-container-bg-color-one:var(--backgrouund-color-Soft-Beige);
+--goal-section-container-bg-color-two:var(--backgrouund-color-Soft-Pink);
+--goal-smartcity-section-bg-color:var(--background-color-soft-pink);
+--goal-section-imgcontainer-box-shadow:var(--shadow-color-one);
+--goal-section-contentContainer-font-color:var(--font-color-dark-gray);
+--goal-container-h2-color:var( --font-color-light-blue);
+--goalsIntro-font-color:var(--font-color-charcol-gray);
+--goalCard-bg-color:var(--font-color-white-one);
+--goalCard-box-shadow:var(--shadow-color-five);
+--goalText-color:var(--font-color-moodnight-blue);
+--goal-arrow-color:var(--font-color-carrot-orange);
+--goal-bg-color-one:var(--background-color-bgYellow);
+--goal-bg-color-two:var(--background-color-bgPurple);
+--goal-bg-color-three:var(--background-color-bgGreen);
+--goal-bg-color-four:var(--background-color-bgTeal);
+--goal-bg-color-five:var(--background-color-bgPeach);
+--goal-bg-color-six:var(--background-color-bgOrange);
+/*Award Section*/
+--award-section-bg-color:var(--background-color-light-gray);
+--award-section-title-color:var(--font-color-dark-gray);
+--award-section-heighlight-color:var(--font-color-bright-blue);
+--award-section-discription-color:var(--font-color-dark-gray);
+--award-section-arrow-color:var(--font-color-dark-gray);
+--award-section-arrow-hover-color:var(--font-color-bright-blue);
+--award-section-imageWrapper-box-shadow:var(--shadow-color);
+}
+

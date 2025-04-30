@@ -1,0 +1,84 @@
+/* voluntree.module.css */
+
+/* Background */
+.backgroundBlessing {
+    background: linear-gradient(135deg, #fff7ed, #ffedd5);
+    min-height: 100vh;
+    padding: 3rem 1.5rem;
+}
+
+/* Container Box */
+.teamContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 1.5rem;
+    padding: 3rem 2rem;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* Heading */
+.headingText {
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+    color: #c2410c;
+    margin-bottom: 1.5rem;
+}
+
+.descriptionText {
+    text-align: center;
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-bottom: 2.5rem;
+}
+
+/* Team Grid */
+.teamGrid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* Card */
+.cardShadow {
+    background-color: #fff7ed;
+    padding: 2rem;
+    border-radius: 1.25rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 170, 70, 0.1);
+}
+
+.cardShadow:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(255, 165, 0, 0.2);
+}
+
+/* Profile Image */
+.profileImage {
+    width: 96px;
+    height: 96px;
+    border-radius: 9999px;
+    border: 4px solid #fdba74;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.cardShadow:hover .profileImage {
+    transform: scale(1.05);
+}
+
+/* Text Content */
+.memberName {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.25rem;
+}
+
+.memberRole {
+    font-size: 0.875rem;
+    color: #ea580c;
+}

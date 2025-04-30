@@ -8,14 +8,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(90deg, #7a1c1c, #e09f3e); 
+  background-image: linear-gradient(90deg , var(--header-bg-one), var(--header-bg-two)); 
   transition: all 0.4s ease-in-out;
   z-index: 1000;
   height: 60px;
 }
 
 .scrolled {
-  background: #4c0b0b; /* Darker Maroon */
+  background-color: var(--header-scrolled-bg-color); /* Darker Maroon */
 }
 
 .logo {
@@ -23,14 +23,14 @@
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #ffd700; /* Gold */
+  color: var(--header-logo-color); /* Gold */
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 
 .logo:hover {
   transform: scale(1.1);
-  color: #fff;
+  color: var(--header-logo-hover-color);
 }
 
 .navLinks {
@@ -41,7 +41,7 @@
 
 .link {
   text-decoration: none;
-  color: #ffb300; /* Warm Yellow-Orange */
+  color: var(--header-link-font-color); /* Warm Yellow-Orange */
   font-size: 1.1rem;
   font-weight: 500;
   transition: color 0.3s ease-in-out;
@@ -56,13 +56,13 @@
   height: 2px;
   bottom: -5px;
   left: 50%;
-  background: #c0392b; /* Deep Red */
+  background: var(--header-link-after-bg-color); /* Deep Red */
   transition: all 0.3s ease-in-out;
   transform: translateX(-50%);
 }
 
 .link:hover {
-  color: #ff4500; /* Vibrant Orange */
+  color: var(--header-link-hover-font-color); /* Vibrant Orange */
 }
 
 .link:hover::after {
@@ -71,8 +71,8 @@
 
 /* Donate Button - Animated */
 .donateButton {
-  background: linear-gradient(90deg, #c0392b, #ff5733); /* Deep Red to Orange */
-  color: white;
+  background-image: linear-gradient(90deg, var(--header-donate-button-bg-color-one), var(--header-button-donateButton-hover-color-two)); /* Deep Red to Orange */
+  color: var(--header-button-donateButton-color);
   padding: 10px 20px;
   border: none;
   cursor: pointer;
@@ -84,20 +84,20 @@
 }
 
 .donateButton:hover {
-  background: linear-gradient(90deg, #ff5733, #c0392b);
+  background: linear-gradient(90deg, var(--header-button-donationButton-hover-one),var(--header-button-donationButton-hover-two));
   transform: scale(1.05);
 }
 
 /* Glow Animation for Donate Button */
 @keyframes glowEffect {
   0% {
-    box-shadow: 0 0 10px rgba(192, 57, 43, 0.7);
+    box-shadow: 0 0 10px var(--header-button-donationButton-glowEffect-one);
   }
   50% {
-    box-shadow: 0 0 20px rgba(192, 57, 43, 1);
+    box-shadow: 0 0 20px var(--header-button-donationButton-glowEffect-two);
   }
   100% {
-    box-shadow: 0 0 10px rgba(192, 57, 43, 0.7);
+    box-shadow: 0 0 10px var(--header-button-donationButton-glowEffect-one);
   }
 }
 
@@ -105,7 +105,7 @@
 .menuButton {
   background: none;
   border: none;
-  color: white;
+  color: var(--header-button-menuButton-color);
   cursor: pointer;
   display: none;
   font-size: 1.5rem;
@@ -120,14 +120,14 @@
     position: absolute;
     top: 60px;
     right: 0;
-    background: #5a1a1a; /* Rich Maroon */
+    background: var(--header-navlinks-background-color); /* Rich Maroon */
     flex-direction: column;
     width: 250px;
     display: none;
     padding: 15px;
     border-radius: 10px;
     text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px var(--header-navlinks-boxshadow-color);
   }
 
   .navLinks li {
@@ -135,7 +135,7 @@
   }
 
   .navLinks .link {
-    color: white;
+    color:var(--header-navlinks-link-color);
   }
 
   .showMenu {
@@ -182,7 +182,7 @@
 }
 
 .hoverEffect:hover {
-  color: #fff;
+  color: var(--header-navlinks-hoverEffect-color);
 }
 /* Logo Container */
 .logo {

@@ -37,10 +37,10 @@
   font-weight: 700;
   font-family:  sans-serif;
   margin-bottom: 2.5rem;
-  background: linear-gradient(to right, #09080a, #0c1010);
+  background: linear-gradient(to right, #ece6f3, #d8e3e3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 8px rgba(237, 231, 231, 0.3);
   letter-spacing: 1.5px;
   animation: blink 2s infinite;
 }

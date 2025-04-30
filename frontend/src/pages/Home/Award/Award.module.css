@@ -1,0 +1,291 @@
+/* === Section Styling === */
+
+.ctaSection {
+  padding: 3rem 1rem;
+  text-align: center;
+  background: var(--award-section-bg-color);
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color:var(--award-section-title-color);
+}
+
+.highlight {
+  color: var(--award-section-heighlight-color);
+}
+
+.sectionDescription {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  color:var(--award-sectopn-description-color);
+}
+
+/* === Slider === */
+
+.slider {
+  position: relative;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.sliderContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.arrowLeft,
+.arrowRight {
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color:var(--award-section-arrow-color);
+  cursor: pointer;
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.arrowLeft:hover,
+.arrowRight:hover {
+  color: var(--award-section-arrow-hover-color);
+}
+
+.imageBox {
+  flex: 1 1 300px;
+  padding: 1rem;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.imageWrapper {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px var(--award-section-imageWrapper-box-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imageWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.imageWrapper img:hover {
+  transform: scale(1.05);
+}
+
+.textBox {
+  flex: 1 1 400px;
+  padding: 1rem;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(30px);
+  filter: blur(8px);
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    filter: blur(0);
+  }
+}
+
+.awardTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #222;
+}
+
+.awardDescription {
+  margin-top: 0.5rem;
+  color: #555;
+  font-size: 1rem;
+}
+
+/* === Dots === */
+
+.dotContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background: #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.dot:hover {
+  background: #888;
+}
+
+.active {
+  background: #007bff;
+}
+
+/* === AyurYoga Section === */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+  background: #fff;
+}
+
+.section {
+  flex: 1 1 400px;
+  max-width: 500px;
+  text-align: center;
+}
+
+.heading {
+  font-size: 1.75rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+/* === Video === */
+
+.videoBox {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  margin-bottom: 1rem;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* === Reviews === */
+
+.reviewsSection {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color:transparent;
+  border-radius: 1rem;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.reviewCard {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: opacity 0.5s ease-in-out;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.reviewHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.avatar {
+  background-color: #7cb342;
+  color: white;
+  font-weight: bold;
+  font-size: 1.25rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.verified {
+  font-size: 0.75rem;
+  color: #4caf50;
+  margin-top: 0.25rem;
+}
+
+.date {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.stars {
+  font-size: 1.2rem;
+  color: #ffd700;
+  margin-bottom: 0.75rem;
+}
+
+.reviewText {
+  font-style: italic;
+  font-size: 1rem;
+  color: #444;
+}
+
+.rating {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.link {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.link:hover {
+  border-color: #0077cc;
+}

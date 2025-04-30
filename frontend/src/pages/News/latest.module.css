@@ -8,6 +8,7 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 1.5rem;
+    color:#ebedf2
   }
   
   .latestheader h2 {
@@ -17,7 +18,7 @@
   }
   
   .latestheader a {
-    color: #2563eb;
+    color: #eceef3;
     font-size: 0.9rem;
     text-decoration: none;
   }
@@ -39,10 +40,12 @@
     flex: 0 0 auto;
     width: 320px;
     background: transparent;
-    border-radius: 2px;
+    border-radius: 5px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(231, 225, 225, 0.15);
+    background: linear-gradient(90deg, #f46b45, #eea849); /* Deep Maroon to Saffron */
+
 
   }
   
@@ -58,7 +61,7 @@
   }
   .date {
     font-size: 0.9rem;
-    color: #484b50;
+    color: #ffffff;
     margin-bottom: 0.5rem;
     padding-left: 10px;
 
@@ -67,7 +70,7 @@
   .latestcard .contenttitle {
     padding: 0.75rem;
     font-size: 0.95rem;
-    color: #e05858;
+    color: yellow;
     font-weight: 500;
   }
   .description {

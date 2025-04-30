@@ -8,7 +8,7 @@ html, body {
   overflow-x: hidden;
   width: 100%;
   font-family: 'Poppins', sans-serif;
-  background-color: #f0860e;
+  background-color: var(--homepage-background-color);
 }
 
 .homeContainer {
@@ -40,14 +40,48 @@ html, body {
 .heroTitle {
   font-size: 3rem;
   font-weight: bold;
-  animation: fadeInUp 1.5s ease-in-out;
+  font-family: monospace;
+  border-right: 5px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  display: inline-block;
+
+  animation: typing 8s steps(55, end) forwards, cursor 0.5s;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 40ch; } /* Adjust this according to your text length */
+}
+
+@keyframes cursor {
+  50% { border-color: transparent; }
+}
+.sectionTitleP {
+  overflow: hidden;
+  background-color: transparent;
+  color:var(--homepage-sectionTitleP);
+  line-height: 50px;
+  transform: translateX(50%);
+  animation: bouncing-text 10s ease-in-out infinite alternate;
+}
+
+@keyframes bouncing-text {
+  0% {
+      transform: translateX(50%);
+  }
+
+  100% {
+      transform: translateX(-50%);
+  }
 }
 
 /* About Section */
 .aboutSection {
   padding: 80px 20px;
   text-align: center;
-  background: rgba(238, 69, 148, 0.2);
+  background: var(--homepage-aboutSection-bg-color);
   width: 100%;
 }
 
@@ -55,7 +89,7 @@ html, body {
 .programsSection {
   padding: 20px;
   text-align: center;
-  background: rgba(216, 164, 93, 0.8); /* Gold with slight transparency */
+  background: var(--homepage-programSection-bg-color); /* Gold with slight transparency */
   width: 100%;
 }
 
@@ -63,8 +97,8 @@ html, body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  padding: 10px;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -72,38 +106,81 @@ html, body {
 
 /* Cards with Traditional Look */
 .card {
-  width: 280px;
-  padding: 20px;
-  background: linear-gradient(90deg, #8b0000, #ff4500); /* Rich red tones */
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  padding: 10px;
+  background: var(--homepage-programSection-card-bg-color); /* Rich red tones */
+  box-shadow: 0px 4px 10px var(--homepage-programSection-card-box-shadow-color);
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
   text-align: center;
-  color: white;
+  color: var(--homepage-programSection-card-font-color);
   overflow: hidden;
+}
+/* Card styles */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 4px 20px var(--homepage-programsection-card-hover-shadow); /* Adds shadow for emphasis */
+}
+
+.card img {
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1); /* Slight zoom effect for the image */
+}
+
+.card h3, .card p {
+  transition: color 0.3s ease;
+}
+
+.card:hover h3, .card:hover p {
+  color: var(--homepage-programsection-card-hover-h-p); /* Change text color on hover */
+}
+
+
+.swiperslidein{
+  direction: rtl;
+  animation: slideInLeft 0.8s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .card:hover {
   transform: scale(1.05);
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 6px 15px var(--homepage-programsection-card-hover);
 }
 
 /* Testimonials Section */
 .testimonialsSection {
-  padding: 60px 20px;
-  background: rgba(244, 179, 105, 0.9); /* Dark wood-brown with slight transparency */
-  color: #ffd700;
+  padding: 10px 10px;
+  background: var(--homepage-testimonialsSection-bg-color); /* Dark wood-brown with slight transparency */
+  color:var(--homepage-testimonialsSection-font-color); /* Gold */
   text-align: center;
   width: 100%;
 }
 
 .testimonial {
-  background: rgba(139, 0, 0, 0.8); /* Deep red */
+  background: var(--homepage-testimonial-bg-color); /* Deep red */
   padding: 20px;
   border-radius: 10px;
   margin: 20px auto;
   max-width: 600px;
-  color: #fff;
+  color:var(--homepage-testimonial-font-color);
 }
 
 /* Partners Section */
@@ -238,7 +315,7 @@ html, body {
   flex: 1;
   min-width: 280px;
   max-width: 350px;
-  padding: 20px;
+  padding: 30px;
   background: rgb(250, 218, 194);
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -255,21 +332,36 @@ html, body {
   animation: blink 1s infinite alternate ease-in-out;
 }
 
+.sectionTitle1{
+  font-size: 1.5rem;
+  color: #fbf7f7;
+  margin-bottom: 10px;
+}
 @keyframes blink {
   0% { opacity: 1; transform: scale(1); }
   50% { opacity: 0.5; transform: scale(1.1); }
   100% { opacity: 1; transform: scale(1); }
 }
+.sectionTitle2{
+  font-size: 1.5rem;
+  color: #faf2f2;
+  margin-bottom: 10px;
+  cursor: pointer;
+
+
+}
+
 
 /* Buttons */
 .moreButton {
-  background: #d32f2f;
-  color: white;
-  padding: 10px 15px;
+  
+  color: rgb(53, 129, 243);
+  background: transparent;
+  padding: 10px 15px ;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   font-size: 1rem;
-  border-radius: 5px;
   margin-top: 10px;
   transition: transform 0.2s ease-in-out;
 }
@@ -283,11 +375,10 @@ html, body {
 .impactSection {
   background: url('Temple.avif');
   padding: 40px 20px;
-  border-radius: 5px;
   color:black;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
-  margin-top: 10px; /* Space below navbar */
+  margin-top: 5px; /* Space below navbar */
   overflow: hidden;
   width: 100%;
 }

@@ -16,7 +16,7 @@ export default function Footer() {
         {/* Quick Links */}
         <div className={styles.footerLinks}>
           <h3>Quick Links</h3>
-          <Link to="/about" className={styles.footerLink}>About Us</Link>
+          <Link to="/contact" className={styles.footerLink}>Contact Us</Link>
           <Link to="/programs" className={styles.footerLink}>Our Programs</Link>
           <Link to="/volunteer" className={styles.footerLink}>Volunteer</Link>
           <Link to="/donate" className={styles.footerLink}>Donate</Link>

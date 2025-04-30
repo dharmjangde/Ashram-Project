@@ -3,8 +3,8 @@ import 'remixicon/fonts/remixicon.css';
 import styles from "./Testimonials.module.css";
 import bageshvar from "./bageshvarBaba.jpeg";
 import rambhacharya from "./rambhacharkya.jpeg";
-import jaikishori from './jaikishori.jpeg'
-import Pradeep from './pradeep.jpeg'
+import jaikishori from './jaikishori.jpeg';
+import Pradeep from './pradeep.jpeg';
 const Testimonials = () => {
   const testimonials = [
     {
@@ -40,7 +40,6 @@ const Testimonials = () => {
             alt={testimonial.name}
           />
           <div className={styles.card_content}>
-            <span className={styles.quote}>&ldquo;</span>            
             <div className={styles.card__content}>
               <div className={styles.card__details}>
                 <p>{testimonial.text}</p>
